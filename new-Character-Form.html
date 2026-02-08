@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/character-Details.html">Details</a></li>
+        <li><a class="active" href="/new-Character-Form.html">New Character Form</a></li>
+    </ul>
+</nav>
+<p style="margin-top: 50px;"></p>
+    <h2>Add a New Character</h2>
+
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="999" required>
+        </div>
+
+        <div class="form-group">
+            <label for="species">Species:</label>
+            <input type="text" id="species" name="species" required>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="">Select Role</option>
+                <option value="hero">Hero</option>
+                <option value="villain">Villain</option>
+                <option value="supporting">Supporting Character</option>
+                <option value="extra">Extra</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="breathing_technique">Breathing Technique:</label>
+            <input type="text" id="breathing_technique" name="breathing_technique" placeholder="e.g., Water Breathing, Flame Breathing, etc.">
+        </div>
+
+        <!-- Image URL -->
+        <div class="form-group">
+            <label for="image_url">Image URL:</label>
+            <input type="url" id="image_url" name="image_url" placeholder="https://example.com/image.jpg">
+        </div>
+
+        <!-- Short Description -->
+        <div class="form-group">
+            <label for="description">Short Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Create Character</button>
+    </form>
+</body>
+</html>
